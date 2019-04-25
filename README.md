@@ -12,3 +12,11 @@ Additionally, an estimate of actual usage must be made. This must focus on usage
 **Planned Approach**
 
 Use linear programming to estimate the maximum number of parcels that can be inducted per hour, given capacity and other constraints to be defined.
+
+**Optimisation Problem**
+
+*Objective Function*: Maximise number of parcels packed in 1 hour
+
+*Constraints*: 
+* 6 Available inducts, each with maximum capacity of 1700 parcels/hr
+* 
