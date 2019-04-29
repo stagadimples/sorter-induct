@@ -25,6 +25,16 @@ sorter <- dt %>%
             )
 
 
+# Get relative proportions per hour
+
+sorter_rl <- cbind(sorter$hr, sorter[2:(ncol(sorter) - 1)] / rowSums(sorter[2:(ncol(sorter) - 1)]))
+
+# Average hourly proportion by carton type
+max_prop <- (sorter_rl[which.max(sorter$parcels), ])
+max_vals <- sorter[which.max(sorter$parcels), ]
+max_vals # parcels at peak hour 
+
+
 # convert to long format
 
 sorter_lf <- gather(sorter, key = 'description', value = 'parcels', select = -hr)
@@ -42,3 +52,7 @@ sorter_lf %>%
   filter(description != 'parcels') %>%
   ggplot(aes(x = description, y = parcels)) +
   geom_boxplot(aes(colour = description), size = 1)
+
+# Units Per Parcel
+
+upp <- sorter_lf %>%
