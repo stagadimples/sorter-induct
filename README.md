@@ -20,3 +20,4 @@ Use linear programming to estimate the maximum number of parcels that can be ind
 *Constraints*: 
 * 6 Available inducts, each with maximum capacity of 1700 parcels/hr
 * 
+* Cartons from Ipack Machines => Induct 2
