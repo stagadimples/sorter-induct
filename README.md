@@ -18,6 +18,7 @@ Use linear programming to estimate the maximum number of parcels that can be ind
 *Objective Function*: Maximise number of parcels packed in 1 hour
 
 *Constraints*: 
+
 * 6 Available inducts, each with maximum capacity of 1700 parcels/hr
 * 
 * Cartons from Ipack Machines => Cartons Only (Induct 2)
